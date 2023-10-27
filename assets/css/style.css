@@ -1,2 +1,93 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
+
+/* Override default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body {
+    background-color: #87ceeb;
+    font-family: 'Changa One', sans-serif;
+}
+
+/* Header styles */
+header {
+    text-align:center;
+    padding: 20px;
+    background-color: #FFFF00;
+}
+
+/* Game title and logo  */
+h1 {
+    font-size: 2rem;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+}
+
+/* Main game area  */
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* Game-controls area */
+.game-area {
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+button {
+    display:block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #87ceeb;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+} 
+
+/* Rules area styling */
+.rules-area {
+    background-color: #f5DEB3;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
