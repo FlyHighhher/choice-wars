@@ -6,6 +6,8 @@ const resultReference = document.getElementById("result")
 /* Variables for player and computer score */
 let playerScore = 0;
 let computerScore = 0;
+let roundsPlayed = 0;
+const maxRounds = 5;
 
 /* Function for choice */
 
@@ -14,6 +16,22 @@ function playerChoice(choice) {
   const result = determineWinner(choice, computerChoice);
   updateScore(result);
   displayChoices(choice, computerChoice, result);
+  roundsPlayed++;
+
+  if (playerScore === 5) {
+      resultReference.textContent = "Well Done! You Have WON the game!";
+  } else if (computerScore === 5) {
+    resultReference.textContent = "Game Over :( Computer won the game!";
+  } else if (roundsPlayed === maxRounds) {
+    if (playerScore > computerScore) {
+        resultReference.textContent = "Well Done! You Have WON the game!";
+    } else if (computerScore > playerScore) {
+        resultReference.textContent = "Game Over :( Computer won the game!";
+    } else {
+        resultReference.textContent = "Game Over. It's a tie!";
+    }
+  }
+  
 }
 
 function computerChoice() {
