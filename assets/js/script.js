@@ -26,11 +26,11 @@ function determineWinner(player, computer) {
     return "It's a tie!";
   }
   if (
-      (player === "rock" && (computer === "scissors" || computer === "lizard")) ||
-      (player === "paper" && (computer === "rock" || computer === "spock")) ||
-      (player === "scissors" && (computer === "paper" || computer === "lizard")) ||
-      (player === "lizard" && (computer === "spock" || computer === "paper")) ||
-      (player === "spock" && (computer === "scissors" || computer === "rock"))
+      (player === "Rock" && (computer === "Scissors" || computer === "Lizard")) ||
+      (player === "Paper" && (computer === "Rock" || computer === "Spock")) ||
+      (player === "Scissors" && (computer === "Paper" || computer === "Lizard")) ||
+      (player === "Lizard" && (computer === "Spock" || computer === "Paper")) ||
+      (player === "Spock" && (computer === "Scissors" || computer === "Rock"))
   ) {
     return "Player wins!";
   }
@@ -54,9 +54,11 @@ function displayChoices(player, computer, result) {
     gameImage.innerHTML = ` <p>Player chose: ${player}</p><p>Computer chose: ${computer}</p>`;
 }
 
-const buttons = document.querySelectorAll(".controls-area button");
-buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-        playerChoice(button.textContent);
-    });
+document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".controls-area button");
+    buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+            playerChoice(button.textContent);
+        });
+    }); 
 });
