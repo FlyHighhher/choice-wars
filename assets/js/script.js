@@ -1,6 +1,7 @@
 const choices = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
 const playerScoreReference = document.getElementById("pscore")
 const computerScoreReference = document.getElementById("cscore")
+const resultReference = document.getElementById("result")
 
 /* Variables for player and computer score */
 let playerScore = 0;
@@ -23,7 +24,7 @@ function computerChoice() {
 
 function determineWinner(player, computer) {
   if (player === computer) {
-    return "It's a tie! Computer chose $" + computer;
+    return "It's a tie!";
   }
   if (
       (player === "Rock" && (computer === "Scissors" || computer === "Lizard")) ||
@@ -42,8 +43,12 @@ function determineWinner(player, computer) {
 function updateScore(result) {
   if (result=== "Player wins!") {
     playerScore++;
+    resultReference.textContent = "Player wins this round!"
   } else if (result=== "Computer wins!") {
     computerScore++;
+    resultReference.textContent = "Computer wins this round!"
+  } else if (result=== "It's a tie!") {
+    resultReference.textContent = "It's a tie!";
   }
   playerScoreReference.textContent = playerScore;
   computerScoreReference.textContent = computerScore;
