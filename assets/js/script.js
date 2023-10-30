@@ -3,6 +3,7 @@ const playerScoreReference = document.getElementById("pscore")
 const computerScoreReference = document.getElementById("cscore")
 const resultReference = document.getElementById("result")
 
+
 /* Variables for player and computer score */
 let playerScore = 0;
 let computerScore = 0;
@@ -36,6 +37,13 @@ function playerChoice(choice) {
 
 function computerChoice() {
   return choices[Math.floor(Math.random() * choices.length)];
+}
+
+function disableButtons() {
+  const buttons= document.querySelectorAll("controls.area button");
+  buttons.forEach((button) => {
+    buttons.disabled = true;
+  });  
 }
 
 /* Determine the game result */
