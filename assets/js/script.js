@@ -15,7 +15,7 @@ function playerChoice(choice) {
   displayChoices(choice, computerChoice, result);
 }
 
-function computerChoice () {
+function computerChoice() {
   return choices[Math.floor(Math.random() * choices.length)];
 }
 
@@ -23,7 +23,7 @@ function computerChoice () {
 
 function determineWinner(player, computer) {
   if (player === computer) {
-    return "It's a tie!";
+    return "It's a tie! Computer chose $" + computer;
   }
   if (
       (player === "Rock" && (computer === "Scissors" || computer === "Lizard")) ||
@@ -34,13 +34,13 @@ function determineWinner(player, computer) {
   ) {
     return "Player wins!";
   }
-  return "Computer wins";
+  return "Computer wins!";
 }
 
 /* Score table update */
 
-function updateScore (result) {
-  if (result === "Player wins!") {
+function updateScore(result) {
+  if (result=== "Player wins!") {
     playerScore++;
   } else if (result=== "Computer wins!") {
     computerScore++;
@@ -51,7 +51,7 @@ function updateScore (result) {
 
 function displayChoices(player, computer, result) {
     const gameImage = document.querySelector(".game-image");
-    gameImage.innerHTML = ` <p>Player chose: ${player}</p><p>Computer chose: ${computer}</p>`;
+    gameImage.innerHTML = `<p>Player chose: ${player}</p><p>Computer chose: ${computer}</p>`;
 }
 
 document.addEventListener("DOMContentLoaded", function () {
