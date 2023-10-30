@@ -5,7 +5,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -15,7 +15,7 @@ body {
 
 /* Header styles */
 header {
-    text-align:center;
+    text-align: center;
     padding: 20px;
     background-color: #FFFF00;
 }
@@ -34,7 +34,7 @@ h1 {
 main {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     padding: 20px;
 }
 
@@ -46,20 +46,22 @@ main {
 }
 
 button {
-    display:block;
+    display: block;
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     background-color: #87ceeb;
     color: #333;
-    border: none;
+    border: 2px solid #333;
     border-radius: 5px;
     cursor: pointer;
-} 
+    margin-left: 80px;
+    font-family: 'Changa One', sans-serif;
+}
 
 /* Rules area styling */
 .rules-area {
-    background-color: #f5DEB3;
+    background-color: #faf3e0;
     padding: 20px;
     border-radius: 8px;
 }
@@ -79,8 +81,10 @@ ol li {
 
 /* Footer styling */
 footer {
+    margin-top: 40px;
     text-align: center;
     padding: 10px;
+    background-color: #FFFF00
 }
 
 a {
