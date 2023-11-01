@@ -1,4 +1,11 @@
+# Rock, paper, scissors, lizard and Spock game
+
+[Rock, paper, scissors, lizard and Spock game] (https://flyhighhher.github.io/choice-wars/)
+
+This website is created on the Rock, Paper, Scissors, Lizard, Spock game based from the TV series The Big Bang Theory. The game is an expansion on the game Rock, Paper, Scissors. In this version the player is playing against computer and picks a variable and reveals it at the same time. The winner is the one who defeats the others. In a tie, the process is repeated until a winner is found. The maimum rounds are 5.
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+
 
 Welcome,
 
