@@ -95,3 +95,57 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 280px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .game-area, .game-image, .score-area, .rules-area {
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .game-area {
+        order: 1;
+    }
+
+    .game-image {
+        order: 2;
+    }
+
+    .score-area {
+        order: 3;
+    }
+
+    .rules-area {
+        order: 4;
+    }
+
+    .controls-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .controls-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .controls-area button {
+        width: 120px;
+    }
+
+    button {
+        margin-left: 0;
+    }
+}
