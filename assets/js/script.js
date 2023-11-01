@@ -13,7 +13,7 @@ const maxRounds = 5;
 /* Function for choice */
 
 function playerChoice(choice) {
-    const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+    const computerChoice = getComputerChoice();
     const result = determineWinner(choice, computerChoice);
     updateScore(result);
     displayChoices(choice, computerChoice, result);
@@ -38,7 +38,7 @@ function playerChoice(choice) {
 
 }
 
-function computerChoice() {
+function getComputerChoice() {
     return choices[Math.floor(Math.random() * choices.length)];
 }
 
