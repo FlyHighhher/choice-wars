@@ -159,4 +159,8 @@ a:hover {
     button {
         margin-left: 0;
     }
+
+    .game-area h3 {
+        margin-left: 0;
+    }
 }
