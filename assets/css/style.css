@@ -13,6 +13,10 @@ body {
     font-family: 'Changa One', sans-serif;
 }
 
+body h3 {
+    margin-bottom: 10px;
+}
+
 /* Header styles */
 header {
     text-align: center;
@@ -43,6 +47,10 @@ main {
     flex: 1;
     padding: 20px;
     border-radius: 8px;
+}
+
+.game-area h3 {
+    margin-left: 80px;
 }
 
 button {
@@ -102,7 +110,10 @@ a:hover {
         flex-direction: column;
     }
 
-    .game-area, .game-image, .score-area, .rules-area {
+    .game-area,
+    .game-image,
+    .score-area,
+    .rules-area {
         margin: 10px;
         padding: 10px;
         text-align: center;
