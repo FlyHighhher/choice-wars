@@ -4,6 +4,14 @@
 
 This website is created on the Rock, Paper, Scissors, Lizard, Spock game based from the TV series The Big Bang Theory. The game is an expansion on the game Rock, Paper, Scissors. In this version the player is playing against computer and picks a variable and reveals it at the same time. The winner is the one who defeats the others. In a tie, the process is repeated until a winner is found. The maimum rounds are 5.
 
+## Purpose of the project
+
+The website's purpose is to provide a fun and interactive experience for users. In this game, players make choices (e.g., "Rock," "Paper," "Scissors," "Lizard," or "Spock") and compete against a computer opponent. The goal of the game is to win rounds and ultimately the game itself.
+
+## Features
+
+
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 
