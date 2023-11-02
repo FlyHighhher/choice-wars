@@ -62,11 +62,13 @@ The headers were corrected in order it to follow the logical HTML structuring no
   
 - JavaScript
   No errors were found when running through the JavaScript validator (jshint.com)
-  [JShint](assets/images/jshint.png)
+  ![JShint](assets/images/jshint.png)
 
 - Accessibility
-- Mobile lighthouse: [Lighthouse](assets/images/mobile-lighthouse.png)
-- Desktop lighthouse: [Lighthouse](assets/images/desktop-lighthouse.png)
+- Mobile lighthouse: 
+![Lighthouse](assets/images/mobile-lighthouse.png)
+- Desktop lighthouse: 
+![Lighthouse](assets/images/desktop-lighthouse.png)
 
 ## Deployment
 
