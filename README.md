@@ -68,3 +68,16 @@ The headers were corrected in order it to follow the logical HTML structuring no
 - Mobile lighthouse: [Lighthouse](assets/images/mobile-lighthouse.png)
 - Desktop lighthouse: [Lighthouse](assets/images/desktop-lighthouse.png)
 
+## Deployment
+
+The page was deployed at github.com and it can be found at (https://flyhighhher.github.io/choice-wars)
+
+## Credits
+
+- The Code Institute's Love Running and Love Maths walkthrough projects were of great help in building this website.
+- W3Schools.com website has been of great support base in order to build this website.
+- Mentor David Bowers was of great help and support in order to accomplish this project.
+
+## Content
+
+- The logo was taken from website (https://registeredidentity.blogspot.com/2010/09/rock-paper-scissors-lizard-spock.html) .
